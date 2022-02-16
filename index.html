@@ -20,23 +20,34 @@
   <h1>Link para descargar: <a href="https://github.com/shivasiddharth/Stremio-RaspberryPi">Link</a>!</h1>
   
   
-  <h1> https://github.com/shivasiddharth/Stremio-RaspberryPi </h1>
-  <h1> cd /home/pi/Stremio-4.4.142-armhf-32-bit/  </h1>
+  <h1> Command to edit the Static IP config file: </h1>
+  <h1> sudo nano /etc/dhcpcd.conf  </h1>
   <h1> </h1>
   <h1> </h1>
-  <h1> sudo apt-get install ./libfdk-aac1_0.1.6-1_armhf.deb ./stremio_4.4.142-1_armhf.deb -f   </h1>
-  <h1> sudo sh -c "echo 'deb http://ftp.us.debian.org/debian/ buster main contrib non-free' >> /etc/apt/sources.list"</h1>
-  <h1>sudo sh -c "echo 'deb http://deb.debian.org/debian buster main contrib non-free' >> /etc/apt/sources.list"     
-  <h1>sudo apt-get update </h1>
-  <h1> </h1>
-  <h1> </h1>
+  <h1> Paste this in to the file and edit where needed:-   </h1>
+  <h1> interface eth0</h1>
+  <h1> static ip_address=192.168.0.10/24 </h1>
+  <h1> static routers=192.168.0.1</h1>
+  <h1> static domain_name_servers=192.168.0.1</h1>
+    <h1> interface eth1</h1>
+    <h1> static ip_address=192.168.0.10/24</h1>
+    <h1> static routers=192.168.0.1</h1>
+    <h1> static domain_name_servers=192.168.0.1</h1>
+    <h1> Ctrl+X		S		Enter</h1>
+    <h1> Commands to update the Pi:-</h1>
+    <h1> sudo apt-get update</h1>
+    <h1> sudo apt-get upgrade</h1>
+    <h1> Command to install Pi-Hole:-</h1>
+    <h1> sudo curl -sSL http://install.pi-hole.net | bash</h1>
     <h1> </h1>
     <h1> </h1>
     <h1> </h1>
     <h1> </h1>
     <h1> </h1>
-    
-    
+    <h1> </h1>
+    <h1> </h1>
+    <h1> </h1>
+    <h1> </h1>
     
 </body>
   
