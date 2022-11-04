@@ -1,54 +1,30 @@
+<!DOCTYPE html>
 <html>
-<head>
-  
-  <title>Pasos paa el Raspberry</title>
-  <link href="main.css" rel="stylesheet"/> 
-</head>
-<body>
-<h> Pasos para Pi-hole </h>
-  <p style="font-weight:bold;">Paso 1</p>
-  <p> 1- Ingresar a Menu/ Preferences/ Raspberry Pi Configuration</p>
-  <img src='https://i.postimg.cc/qzkrr5MK/1-COnfiguracion.png' width="225" height="151" border='0' alt='1-COnfiguracion'/></a>
- 
-  <p> 2- Ingresar a la aba Preference y después SSH y VNC activado</p>
-  <img src='https://i.postimg.cc/F1stnnrn/2-Configuracion.png' width="1125" height="755" border='0' alt='2-Configuracion'/></a>
+  <head>
+    <title>PDF Viewer</title>
+  </head>
+  <body>
 
+    <!--
+      Place the following <div> element where you want the PDF to be displayed in your website. You can change the size using the width and height attributes.
+    -->
+    <div>
+      <object
+        data='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
+        type="application/pdf"
+        width="500"
+        height="678"
+      >
 
-<p style="font-weight:bold;">Paso 1</p>
-<p style="font-weight:normal;">Como primer paso descargaremos</p>
+        <iframe
+          src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
+          width="500"
+          height="678"
+        >
+        <p>This browser does not support PDF!</p>
+        </iframe>
+      </object>
+    </div>
 
-  <h1>Link para descargar: <a href="https://github.com/shivasiddharth/Stremio-RaspberryPi">Link</a>!</h1>
-  
-  
-  <h1> Command to edit the Static IP config file: </h1>
-  <h1> sudo nano /etc/dhcpcd.conf  </h1>
-  <h1> </h1>
-  <h1> </h1>
-  <h1> Paste this in to the file and edit where needed:-   </h1>
-  <h1> interface eth0</h1>
-  <h1> static ip_address=192.168.0.10/24 </h1>
-  <h1> static routers=192.168.0.1</h1>
-  <h1> static domain_name_servers=192.168.0.1</h1>
-    <h1> interface eth1</h1>
-    <h1> static ip_address=192.168.0.10/24</h1>
-    <h1> static routers=192.168.0.1</h1>
-    <h1> static domain_name_servers=192.168.0.1</h1>
-    <h1> Ctrl+X		S		Enter</h1>
-    <h1> Commands to update the Pi:-</h1>
-    <h1> sudo apt-get update</h1>
-    <h1> sudo apt-get upgrade</h1>
-    <h1> Command to install Pi-Hole:-</h1>
-    <h1> sudo curl -sSL http://install.pi-hole.net | bash</h1>
-    <h1> </h1>
-    <h1> </h1>
-    <h1> </h1>
-    <h1> </h1>
-    <h1> </h1>
-    <h1> </h1>
-    <h1> </h1>
-    <h1> </h1>
-    <h1> </h1>
-    
-</body>
-  
+  </body>
 </html>
